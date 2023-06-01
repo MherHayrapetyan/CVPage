@@ -1,3 +1,5 @@
+/* Header - Burger Menu */
+
 @media (min-width: 800px) and (max-width: 1000px) {
   header {
     padding-top: 15px;
@@ -25,29 +27,45 @@
   }
 }
 
+/* Header - Burger Menu End */
+
+/* Content One */
+
 @media only screen and (max-width: 950px) {
-    .contentOneImg {
-        display: none;
-    }
-    .contentOneTxt {
-        width: 90%;
-    }
+  .contentOneImg {
+    display: none;
+  }
+  .contentOneTxt {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .contentOneTxt h1 {
-        font-size: 45px;
-    }
+  .contentOneTxt h1 {
+    font-size: 45px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .contentOneTxt h1 {
-        font-size: 40px;
-    }
-    .contentOneTxt {
-        margin-left: 30px;
-    }
-    .contentOneTxt h2::before {
-        left: 35px;
-    }
+  .contentOneTxt h1 {
+    font-size: 40px;
+  }
+  .contentOneTxt {
+    margin-left: 30px;
+  }
+  .contentOneTxt h2::before {
+    left: 35px;
+  }
 }
+
+/* Content One End */
+
+/* Cursor */
+
+@media only screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
+
+/* Cursor End */

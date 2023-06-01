@@ -3,6 +3,10 @@ const burgBox = document.querySelector(".burgBox");
 const burgMiniBox = document.querySelectorAll(".burgMiniBox");
 const header = document.querySelector("header");
 const logoBox = document.querySelector(".logoBox");
+const cursor = document.querySelector(".cursor");
+const contentOne = document.querySelector(".contentOne");
+
+// Burger Menu
 
 burgSvg.onclick = () => {
   burgBox.style.display = "flex";
@@ -13,6 +17,10 @@ burgMiniBox.forEach((item) => {
     burgBox.style.display = "none";
   };
 });
+
+// Burger Menu End
+
+// Header
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset === 0) {
@@ -27,3 +35,19 @@ window.addEventListener("scroll", () => {
     logoBox.style.height = "45px";
   }
 });
+
+// Header End
+
+// Cursor
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});
+
+document.addEventListener("mousemove", (e) => {
+  if (e.pageY > contentOne.clientHeight) {
+    cursor.style.display = "none";
+  }
+});
+
+// Cursor End
