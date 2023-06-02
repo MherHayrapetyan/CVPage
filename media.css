@@ -42,12 +42,6 @@
 
 @media only screen and (max-width: 600px) {
   .contentOneTxt h1 {
-    font-size: 45px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .contentOneTxt h1 {
     font-size: 40px;
   }
   .contentOneTxt {
@@ -55,6 +49,15 @@
   }
   .contentOneTxt h2::before {
     left: 35px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .contentOneTxt h1 {
+    font-size: 30px;
+  }
+  .contentOneTxt h2 {
+    font-size: 11px;
   }
 }
 
@@ -69,3 +72,93 @@
 }
 
 /* Cursor End */
+
+/* Content Two  */
+
+@media only screen and (max-width: 1000px) {
+  .contentTwoBigBox {
+    flex-direction: column;
+  }
+  .contentTwoBigBox > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contentTwoTitle h1 {
+    font-size: 45px;
+  }
+  .contentTwoTitle {
+    padding-left: 30px;
+  }
+  .contentTwoTitle h2::before {
+    left: 35px;
+  }
+  .contentTwoBigBoxTxtBox h1 {
+    font-size: 25px;
+  }
+  .contentTwoBigBoxTxtBox h2 {
+    font-size: 15px;
+  }
+  .dateParent .data {
+    margin-right: 30px;
+  }
+  .dateParent p,
+  .dateParent p a {
+    font-size: 15px;
+  }
+  .contentTwoImg {
+    width: 240px;
+    height: 310px;
+  }
+  .contentTwoImg::before {
+    width: 240px;
+    height: 310px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contentTwoTitle h1 {
+    font-size: 30px;
+  }
+  .contentTwoTitle h2 {
+    font-size: 11px;
+  }
+  .contentTwoBigBoxTxtBox h1 {
+    font-size: 22px;
+  }
+  .contentTwoBigBoxTxtBox h2 {
+    font-size: 12px;
+  }
+  .dateParent .data {
+    margin-right: 5px;
+  }
+  .dateParent p,
+  .dateParent p a {
+    font-size: 12px;
+  }
+  .contentTwoImg {
+    width: 200px;
+    height: 270px;
+  }
+  .contentTwoImg::before {
+    width: 200px;
+    height: 270px;
+  }
+  .contentTwoBigBoxImgBox {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .dateParent p,
+  .dateParent p a {
+    font-size: 10px;
+  }
+}
+
+/* Content Two End */
+
+/* Content Three End */
+
+/* Content Three End */
