@@ -75,7 +75,7 @@
 
 /* Content Two  */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .contentTwoBigBox {
     flex-direction: column;
   }
@@ -105,7 +105,7 @@
   }
   .dateParent p,
   .dateParent p a {
-    font-size: 15px;
+    font-size: 14px;
   }
   .contentTwoImg {
     width: 240px;
@@ -135,7 +135,7 @@
   }
   .dateParent p,
   .dateParent p a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .contentTwoImg {
     width: 200px;
@@ -150,15 +150,69 @@
   }
 }
 
-@media only screen and (max-width: 300px) {
-  .dateParent p,
-  .dateParent p a {
-    font-size: 10px;
-  }
-}
-
 /* Content Two End */
 
 /* Content Three End */
 
+@media only screen and (max-width: 1250px) {
+  .contentThreeBigBox {
+    flex-direction: column;
+  }
+  .contentThreeBigBoxMini {
+    width: 100%;
+  }
+  .contentThreeBigBoxMiniBox,
+  .contentThreeBigBoxMiniBoxTxt {
+    width: 95%;
+  }
+  .contentThreeBigBoxMiniBoxTwo {
+    height: 400px;
+  }
+  .contentThreeBigBoxMini {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contentThreeBigBoxMiniBoxTxtTtile {
+    font-size: 25px;
+  }
+  .contentThreeBigBoxMiniBoxTxtTxt {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contentThreeBigBoxMiniBoxTxtTtile {
+    font-size: 20px;
+  }
+  .contentThreeBigBoxMiniBoxTxtTxt {
+    font-size: 12px;
+  }
+  .contentThreeBigBoxMini {
+    flex-direction: column;
+  }
+  .contentThreeBigBoxMiniBoxTwo {
+    width: 100%;
+    padding: 10px 20px;
+    height: 180px;
+  }
+
+  .contentThreeBigBoxMiniBoxTwo:nth-child(2) {
+    height: 270px;
+    margin-top: 10px;
+  }
+
+  .contentThreeBigBoxMini {
+    padding-left: 10px;
+  }
+}
+
 /* Content Three End */
+
+/* Content Four */
+
+
+
+/* Content Four End */
+
