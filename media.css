@@ -212,6 +212,61 @@
 
 /* Content Four */
 
+@media only screen and (max-width: 1200px) {
+  .contentFourBoxMin {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contentFourBox {
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .contentFourBoxMin {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .contentFourBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contentFourBoxMin {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .contentFourBoxMin {
+    width: 350px;
+  }
+  .contentFourBoxMinBoxImg {
+    height: 220px;
+  }
+  .contentFourBoxMinBoxTxt h3 {
+    font-size: 27px;
+  }
+  .contentFourBoxMinBoxTxt p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .contentFourBoxMin {
+    width: 270px;
+  }
+  .contentFourBoxMinBoxImg {
+    height: 170px;
+  }
+  .contentFourBoxMinBoxTxt h3 {
+    font-size: 24px;
+  }
+}
 
 
 /* Content Four End */

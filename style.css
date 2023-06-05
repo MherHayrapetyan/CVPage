@@ -618,9 +618,75 @@ menu {
 
 .contentFour {
   width: 100%;
-  height: 200px;
-  background-color: red;
   margin-top: 70px;
+  padding-bottom: 50px;
+  background-color: rgb(245, 245, 245);
+}
+
+.contentFourBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.contentFourBoxMin {
+  width: 550px;
+}
+
+.contentFourBoxMinBox {
+  margin-top: 55px;
+  cursor: pointer;
+}
+
+.contentFourBoxMinBoxImg {
+  width: 100%;
+  height: 270px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.contentFourBoxMinBoxImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+  transition: .7s;
+  transition-timing-function: ease-out;
+}
+
+.contentFourBoxMinBox:hover img {
+  transform: scale(1.4);
+  transform-origin: 0px 0px;
+}
+
+.contentFourBoxMinBoxTxt {
+  width: 100%;
+  padding: 5px;
+}
+
+.contentFourBoxMinBoxTxt h3 {
+  margin-top: 15px;
+  margin-left: 10px;
+  color: rgb(107, 31, 128);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.contentFourBoxMinBoxTxt p {
+  text-transform: capitalize;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(40, 40, 40);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.8;
 }
 
 /* Content Four End */
