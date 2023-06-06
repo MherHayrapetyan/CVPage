@@ -268,6 +268,36 @@
   }
 }
 
-
 /* Content Four End */
 
+/* Content Five */
+
+@media only screen and (max-width: 600px) {
+  .contactBox {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contactBox {
+    padding: 0 25px;
+  }
+  .contactBox h3 {
+    font-size: 27px;
+  }
+  .contactBox p {
+    font-size: 15px;
+  }
+  .contactBox svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Content Five End */
+
+/* Footer */
+
+
+
+/* Footer End */

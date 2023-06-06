@@ -50,5 +50,4 @@ document.addEventListener("mousemove", (e) => {
   }
 });
 
-
 // Cursor End

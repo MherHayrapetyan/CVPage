@@ -168,7 +168,6 @@ header {
 
 menu {
   width: 100%;
-  height: 1000px;
 }
 
 /* Content One */
@@ -177,7 +176,6 @@ menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* background-color: aqua; */
   padding-bottom: 120px;
 }
 
@@ -652,7 +650,7 @@ menu {
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
-  transition: .7s;
+  transition: 0.7s;
   transition-timing-function: ease-out;
 }
 
@@ -690,3 +688,81 @@ menu {
 }
 
 /* Content Four End */
+
+/* Content Five */
+
+.contentFive {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.contactBox {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 60px;
+}
+
+.contactBox h3 {
+  opacity: 0.8;
+  font-size: 34px;
+  color: rgb(107, 31, 128);
+  font-style: italic;
+  font-weight: 100;
+}
+
+.contactBox a {
+  text-decoration-line: none;
+  margin-left: 20px;
+  position: relative;
+  top: 20px;
+  opacity: 0.9;
+}
+
+.phone {
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: rgb(40, 40, 40);
+  opacity: 0.78;
+  position: relative;
+  top: -5px;
+  left: 7px;
+}
+
+.contactBox a svg {
+  animation-name: animSvg;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+@keyframes animSvg {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+
+.contactBox a:hover {
+  border-bottom: 2px solid rgb(107, 31, 128);
+}
+
+.contactBox a:hover svg {
+  animation-play-state: running;
+}
+
+/* Content Five End */
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(245, 245, 245);
+}
+
+/* Footer End */
