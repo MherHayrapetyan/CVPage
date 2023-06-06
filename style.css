@@ -8,6 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration-line: none;
+}
+
 /* Scroll Bar */
 
 ::-webkit-scrollbar {
@@ -36,6 +40,24 @@ header {
   padding-right: 70px;
   transition: 0.3s;
   z-index: 999;
+  transform: translateY(-100px);
+  opacity: 0;
+  animation-name: animHead;
+  animation-timing-function: ease-out;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animHead {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .logoBox {
@@ -500,6 +522,12 @@ menu {
   letter-spacing: 1px;
   color: rgb(107, 31, 128);
   border: 1px solid rgb(107, 31, 128);
+  transition: 0.3s;
+}
+
+.contentTwoBigBoxTxtBox button:hover {
+  color: white;
+  background-color: rgb(107, 31, 128);
 }
 
 /* Content Two End */
@@ -738,6 +766,7 @@ menu {
   position: relative;
   top: 20px;
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .phone {
@@ -818,12 +847,13 @@ footer {
 .contentFive,
 .contentFour,
 .contentThree,
-.contentTwo {
+.contentTwo,
+footer {
   transform: translateX(-150px);
   opacity: 0;
   animation-name: animTxt;
   animation-timing-function: ease-out;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-play-state: paused;
@@ -842,7 +872,30 @@ footer {
 
 .animImg {
   display: none;
-  animation-delay: .6s;
+  animation-delay: 0.6s;
 }
 
 /* Animation Scroll End */
+
+/* Sayt Top */
+
+.saytTop {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(220, 220, 220);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  transition: 1s;
+  transition-timing-function: ease-out;
+  transform: translateY(-700px);
+}
+
+/* Sayt Top End */

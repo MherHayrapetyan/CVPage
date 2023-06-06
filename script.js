@@ -15,6 +15,8 @@ const skillsTop = document.querySelectorAll(".skillsTop");
 const worksTop = document.querySelectorAll(".worksTop");
 const contactsTop = document.querySelectorAll(".contactsTop");
 const navOneLi = document.querySelectorAll(".navOne ul li");
+const animImg = document.querySelector(".animImg");
+const saytTop = document.querySelector(".saytTop");
 
 // Burger Menu
 
@@ -117,7 +119,6 @@ contactsTop.forEach((item) => {
 
 // Header li Border
 
-
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 0) {
     navOneLi.forEach((item) => {
@@ -155,44 +156,73 @@ window.addEventListener("scroll", () => {
 
 // Animation Scroll
 
-const animTwoScroll = document.querySelector(".animTwoScroll")
-const animThreeScroll = document.querySelector(".animThreeScroll")
-const animFourScroll = document.querySelector(".animFourScroll")
-const animFiveScroll = document.querySelector(".animFiveScroll")
-
-
-
-
-
-
-const animImg = document.querySelector(".animImg")
-
-console.log(contentFive.offsetTop)
-console.log(window.pageYOffset)
+const footer = document.querySelector("footer");
 
 window.addEventListener("scroll", () => {
-  if(window.pageYOffset > contentFour.offsetTop - 300) {
-    contentFour.style.animationPlayState = "running"
+  if (window.pageYOffset > contentFour.offsetTop - 300) {
+    contentFour.style.animationPlayState = "running";
   }
-})
-
-window.addEventListener("scroll", () => {
-  if(window.pageYOffset > contentFive.offsetTop - 300) {
-    contentFive.style.animationPlayState = "running"
+  if (window.pageYOffset > contentFive.offsetTop - 300) {
+    contentFive.style.animationPlayState = "running";
   }
-})
-
-window.addEventListener("scroll", () => {
-  if(window.pageYOffset > contentThree.offsetTop - 300) {
-    contentThree.style.animationPlayState = "running"
+  if (window.pageYOffset > contentThree.offsetTop - 300) {
+    contentThree.style.animationPlayState = "running";
   }
-})
-
-window.addEventListener("scroll", () => {
-  if(window.pageYOffset > contentTwo.offsetTop - 300) {
-    contentTwo.style.animationPlayState = "running"
-    animImg.style.display = "block"
+  if (window.pageYOffset > contentTwo.offsetTop - 300) {
+    contentTwo.style.animationPlayState = "running";
+    animImg.style.display = "block";
   }
-})
+  if (window.pageYOffset > footer.offsetTop - 550) {
+    footer.style.animationPlayState = "running";
+  }
+});
 
 // Animation Scroll End
+
+// Sayt Top
+
+let i = true;
+
+function saytTopFn() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
+
+saytTop.onclick = () => {
+  saytTopFn();
+  i = true;
+};
+
+window.addEventListener("scroll", () => {
+  if (i) {
+    if (window.pageYOffset > 500) {
+      saytTop.style.transform = "translateY(0)";
+      saytTop.style.opacity = ".7";
+      i = false;
+    }
+  } else {
+    if (window.pageYOffset < 500) {
+      saytTop.style.transform = "translateY(-700px)";
+      saytTop.style.opacity = "0";
+      i = true;
+    }
+  }
+});
+
+// Sayt Top End
+
+// Information Media
+
+function phoneFn() {
+  alert(`Phone:   +374 (93)-333-414
+              +374 (99)-712-487`);
+}
+
+function gmailFn() {
+  alert(`Gmail:   hayrapetyanmher65@gmail.com`);
+}
+
+// Information Media End

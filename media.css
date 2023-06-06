@@ -70,6 +70,21 @@
 
 /* Cursor End */
 
+/* Sayt Top */
+
+@media only screen and (max-width: 500px) {
+  .saytTop {
+    width: 40px;
+    height: 40px;
+  }
+  .saytTop svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Sayt Top End */
+
 /* Content Two  */
 
 @media only screen and (max-width: 1050px) {
