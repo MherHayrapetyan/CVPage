@@ -702,9 +702,13 @@ menu {
   padding: 0 60px;
 }
 
+.contactBox svg {
+  opacity: .9;
+}
+
 .contactBox h3 {
-  opacity: 0.8;
-  font-size: 34px;
+  opacity: 0.78;
+  font-size: 31px;
   color: rgb(107, 31, 128);
   font-style: italic;
   font-weight: 100;
@@ -721,7 +725,7 @@ menu {
 .phone {
   display: inline-block;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 17px;
   color: rgb(40, 40, 40);
   opacity: 0.78;
   position: relative;
@@ -761,8 +765,32 @@ menu {
 
 footer {
   width: 100%;
-  height: 200px;
   background-color: rgb(245, 245, 245);
+  padding: 45px 0;
+}
+
+.footerBox {
+    font-size: 19px;
+    color: rgb(40, 40, 40);
+    font-weight: 100;
+    text-transform: capitalize;
+    opacity: .7;
+    font-style: italic;
+    text-align: center;
+}
+
+.footerBox:nth-child(2) {
+  opacity: .9;
+  margin-top: 12px;
+}
+
+.footerBox:nth-child(2) svg {
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.top {
+  cursor: pointer;
 }
 
 /* Footer End */

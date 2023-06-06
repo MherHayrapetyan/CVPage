@@ -298,6 +298,14 @@
 
 /* Footer */
 
-
+@media only screen and (max-width: 400px) {
+  .footerBox {
+    font-size: 17px;
+  }
+  .footerBox svg {
+    width: 18px;
+    height: 18px;
+  }
+}
 
 /* Footer End */
