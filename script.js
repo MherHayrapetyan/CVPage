@@ -17,6 +17,7 @@ const contactsTop = document.querySelectorAll(".contactsTop");
 const navOneLi = document.querySelectorAll(".navOne ul li");
 const animImg = document.querySelector(".animImg");
 const saytTop = document.querySelector(".saytTop");
+const year = document.querySelector(".year");
 
 // Burger Menu
 
@@ -172,7 +173,7 @@ window.addEventListener("scroll", () => {
     contentTwo.style.animationPlayState = "running";
     animImg.style.display = "block";
   }
-  if (window.pageYOffset > footer.offsetTop - 550) {
+  if (window.pageYOffset > footer.offsetTop - 600) {
     footer.style.animationPlayState = "running";
   }
 });
@@ -217,12 +218,13 @@ window.addEventListener("scroll", () => {
 // Information Media
 
 function phoneFn() {
-  alert(`Phone:   +374 (93)-333-414
-              +374 (99)-712-487`);
+  alert(`Phone:   +374 (93)-333-414 \n              +374 (99)-712-487`);
 }
 
 function gmailFn() {
   alert(`Gmail:   hayrapetyanmher65@gmail.com`);
 }
+
+year.innerHTML = new Date().getFullYear()
 
 // Information Media End
